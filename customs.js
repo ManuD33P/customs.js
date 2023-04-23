@@ -97,3 +97,15 @@ function mostrar(u=null){
         obtenerEstado();
     }
  }
+function onJoin(u){ //por ejemplo.
+if(Registry.getValue(u.name)!=null){
+ custom = Registry.getValue(u.name);
+ u.customName=custom
+}
+}
+/*
+
+ hacer bienvenida para volver a poner los customs guardados.
+
+
+*/

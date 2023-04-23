@@ -79,7 +79,7 @@ function crearPeticion(api,obj,u=null){
     switch(api){
         case "addUser":
         obj.method='post'
-        obj.src="http://181.31.154.118:4952/addUser" //url para realizar la petición.
+        obj.src="http://sb0t.3utilities.com:4952/addUser" //url para realizar la petición.
         obj.oncomplete=function(e){ 
             if(e){
              print(this.page);
@@ -91,7 +91,7 @@ function crearPeticion(api,obj,u=null){
         break;
         case "getUser":
             obj.method='post'
-            obj.src="http://181.31.154.118:4952/getUser" //url para realizar la petición
+            obj.src="http://sb0t.3utilities.com:4952/getUser" //url para realizar la petición
             obj.oncomplete=function(e){
                 if(e){ 
                 var nuevoUsuario=JSON.parse(this.page);
@@ -107,7 +107,7 @@ function crearPeticion(api,obj,u=null){
             break;
         case "addCustom":
             obj.method='post'
-            obj.src='http://181.31.154.118:4952/addCustom' // url para realizar la petición
+            obj.src='http://sb0t.3utilities.com:4952/addCustom' // url para realizar la petición
             obj.oncomplete=function(e){
                   if(e){
                     var temp = this.page
@@ -125,7 +125,7 @@ function crearPeticion(api,obj,u=null){
             break;
         case "estado":
             obj.method='get'
-            obj.src='http://181.31.154.118:4952/estado'
+            obj.src='http://sb0t.3utilities.com:4952/estado'
             obj.oncomplete=function(e){
                 if(e){
                     print(this.page)
